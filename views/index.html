@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="nav">
+            <ul class="options">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects" ><li>Projects</li></a>
+                <a href="#certificates"><li>Certifications</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </div>      
+    </div>
+    <div class="responsive">
+    <div class="drop" >
+        <div class="icon bars"><i class="fa-solid fa-bars"></i></div>
+        <div class="icon mark"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="dropdown" id="dropdown">
+        <ul class="option">
+            <a href="#home" class="optional"><li>Home</li></a>
+            <a href="#about" class="optional"><li>About</li></a>
+            <a href="#projects" class="optional" ><li>Projects</li></a>
+            <a href="#skills" class="optional"><li>Skills</li></a>
+            <a href="#certificates" class="optional"><li>Certifications</li></a>
+            <a href="#contact" class="optional"><li>Contact</li></a>
+        </ul> 
+</div>
+</div>
+    <div class="first-section" id="home">
+        <div class="data" style="width: 50%;">
+           <h1>Hey, I am <span class="name">Sasank.</span> </h1><br>
+           <h2>I am a <span class="skills"> </span></h2>
+        </div>
+        <div class="photo">
+            <div class="profilephoto">
+            <img style="width: 16rem; height: 16rem; width: 25rem; height: 25rem; border-radius: 50% 50% 0 0 ;" src="Profile.jpg" alt="image">
+        </div>
+        </div>
+    </div>
+    <div id="about">
+    <div class="profile" >
+        <div class="picture">
+            <img src="Profile.jpg" alt="Profile">
+        </div>
+        <div class="Line"></div>
+        <div class="profile_data">
+            <h1>About Me!!!</h1>
+            <br>
+            <p>
+                Hi, I'm Sasank, a 2nd-year Computer Science Engineering student at RGUKT R.K. Valley IIIT. I'm a Full-Stack Developer with hands-on experience in HTML, CSS, JavaScript, Node.js, React, MongoDB, and SQL.
+                I have worked on several projects, including an E-Commerce website for hotel booking. Additionally, I have a strong foundation in Python, Java, C, and Object-Oriented Programming (OOPs). I'm also familiar with Python libraries like NumPy, Pandas, and Turtle.
+                Currently, I'm learning Data Structures and Algorithms (DSA) to enhance my problem-solving skills. I have a passion for building efficient, scalable, and user-friendly websites.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="projects">
+    <div class="heading">
+    <h1>My Works <i class="fa-solid fa-briefcase"></i></h1>
+</div>
+    <div class="project_list" >
+        <div class="container">
+            <div class="img">
+                <img src="https://cdn.mos.cms.futurecdn.net/f48rqmBZQ6cswpEscm2QN9.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>CyberShield</h3><br> <p> An AI-powered security tool that scans URLs, PDFs, and IPs for threats using advanced classifiers. Features real-time malware detection.</p>
+                <a href="www.github.com" ><button class="btn">GitHub</button></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/eac290b17e167fcab2507f9871831e1522ddf532" alt="">
+            </div>
+            <div class="text">
+               <h3>StayEase</h3><br><p>A house/hotel booking platform with a smooth booking system. Secure authentication and authorisation, responsive UI for seamless bookings.</p>
+               <a href="www.github.com" ><button class="btn">GitHub</button></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Mr4botQBHrh41EP3ZTNWOtIamYkJbyu8VA&s" alt="">
+            </div>
+            <div class="text">
+               <h3>Weatherly</h3><br><p> A sleek React weather app fetching live weather updates with temperature, humidity, wind speed, and more with a minimalist design. It uses Weather API</p>
+               <a href="www.github.com" ><button class="btn">GitHub</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="certificates">
+    <!-- <hr> -->
+    <!-- <div class="certificate_show" style=" height: 100vh; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 2px solid black;"> -->
+    <div class="certificate_show" style="padding:0rem 3rem;" >
+
+        <!-- <div class="certificate_photo">
+            <img src="profile.jpg" width="100px" height="100px"  alt="profile">
+        </div>
+        <div class="certificate_description">
+            <p>Here comes the description of the page</p>
+        </div> -->
+        <div style="text-align: center; margin-bottom: 1rem;"><h1>Certificates </h1></div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="certificate1"><img src="java.png" alt="Cert 1"> Java Programming Fundamentals (Codio, edX) – Covered OOP, loops, conditionals, and data structures</div>
+            </div>
+            <div class="timeline-item">
+                <div class="certificate2"><img src="web.png" alt="Cert 2"> Web Development Fundamentals (IBM, edX) – Focused on HTML, CSS, JavaScript, and web frameworks.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="certificate1"><img src="node.png" alt="Cert 2">  Node.js Essentials (LinkedIn Learning) – Covered Node.js fundamentals, asynchronous programming, and Express.js.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="certificate2"><img src="generativeAI.png" alt="Cert 2">Generative AI Basics (LinkedIn Learning) – Introduced concepts of generative AI and its applications in a 40-minute course.</div>
+            </div>
+    </div>
+    </div>
+</div>
+<div id="skills">
+    <br>
+    <div class="skill">
+        <div class="technical">
+            <h1>Technical Skills</h1>
+            <br>
+            <div class="tech">
+                <h3><i class="fa-brands fa-html5"></i> HTML5 <span class="percent"></span></h3> 
+                <div class="progress-bar"><div class="progress html" data-width="85%"></div></div>
+            
+                <h3><i class="fa-brands fa-css3-alt"></i> CSS <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress css" data-width="80%"></div></div>
+            
+                <h3><i class="fa-brands fa-js"></i> JavaScript <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress javascript" data-width="75%"></div></div>
+            
+                <h3><i class="fa-brands fa-node"></i> Node.js <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress nodejs" data-width="75%"></div></div>
+            
+                <h3><i class="fa-brands fa-python"></i> Python <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress python" data-width="70%"></div></div>
+            
+                <h3><i class="fa-brands fa-java"></i> Java <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress java" data-width="65%"></div></div>
+                <h3><i class="fa-brands fa-bootstrap text-purple"></i> Bootstrap <span class="percent"></span></h3>
+                <div class="progress-bar">
+                    <div class="progress" data-width="75%"></div>
+                </div>
+                <h3><i class="fa-solid fa-c"></i> C <span class="percent"></span></h3>
+                <div class="progress-bar"><div class="progress c" data-width="50%"></div></div>
+            </div>                      
+        </div>
+        <div class="nontechincal">
+            <h1>Non Technical Skills</h1>
+            <br>
+            <h3><i class="fa-solid fa-brain"></i> Problem Solving<span class="percent">85%</span></h3>
+            <div class="progress-bar">
+                <div class="progress problem-solving" data-width="70%"></div>
+
+            </div>
+        
+            <h3><i class="fa-solid fa-comments"></i> Communication <span class="percent">70%</span></h3>
+
+            <div class="progress-bar">
+                <div class="progress communication" data-width="67%"></div>
+            </div>
+        
+            <h3><i class="fa-solid fa-users"></i> Teamwork<span class="percent">75%</span></h3>
+            <div class="progress-bar">
+                <div class="progress teamwork" data-width="75%"></div>
+            </div>
+        
+            <h3><i class="fa-solid fa-clock"></i> Time Management <span class="percent">70%</span></h3>
+            <div class="progress-bar">
+                <div class="progress time-management" data-width="70%"></div>
+                
+            </div>  
+        </div>
+    </div>
+</div>
+    <hr>
+    <div id="contact">
+    <div class="contact">
+        <div class="resume">
+
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <input type="text">
+                <input type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="../static/js/app.js"></script>
+</body>
+</html>
