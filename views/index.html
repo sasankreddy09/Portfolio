@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-vector-portfolio-icon-png-image_711172.jpg">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -46,14 +47,14 @@
         </div>
         <div class="photo">
             <div class="profilephoto">
-            <img style="width: 16rem; height: 16rem; width: 25rem; height: 25rem; border-radius: 50% 50% 0 0 ;" src="Profile.jpg" alt="image">
+            <img style="width: 16rem; height: 16rem; width: 25rem; height: 25rem; border-radius: 50% 50% 0 0 ;" src="https://i.ibb.co/bjjj71XQ/Profile.jpg" alt="image">
         </div>
         </div>
     </div>
     <div id="about">
     <div class="profile" >
         <div class="picture">
-            <img src="Profile.jpg" alt="Profile">
+            <img src="https://i.ibb.co/bjjj71XQ/Profile.jpg" alt="Profile">
         </div>
         <div class="Line"></div>
         <div class="profile_data">
@@ -115,16 +116,16 @@
         <div style="text-align: center; margin-bottom: 1rem;"><h1>Certificates </h1></div>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="certificate1"><img src="java.png" alt="Cert 1"> Java Programming Fundamentals (Codio, edX) – Covered OOP, loops, conditionals, and data structures</div>
+                <div class="certificate1"><img src="https://i.ibb.co/XBYQG0J/Codio-java3-1-Certificate-ed-X.jpg" alt="Cert 1"> Java Programming Fundamentals (Codio, edX) – Covered OOP, loops, conditionals, and data structures</div>
             </div>
             <div class="timeline-item">
-                <div class="certificate2"><img src="web.png" alt="Cert 2"> Web Development Fundamentals (IBM, edX) – Focused on HTML, CSS, JavaScript, and web frameworks.</div>
+                <div class="certificate2"><img src="https://i.ibb.co/Kc9q7wgK/web.png" alt="Cert 2"> Web Development Fundamentals (IBM, edX) – Focused on HTML, CSS, JavaScript, and web frameworks.</div>
             </div>
             <div class="timeline-item">
-                <div class="certificate1"><img src="node.png" alt="Cert 2">  Node.js Essentials (LinkedIn Learning) – Covered Node.js fundamentals, asynchronous programming, and Express.js.</div>
+                <div class="certificate1"><img src="https://i.ibb.co/7xgL1mW6/Linked-In-Learning-Certificate-1.jpg" alt="Cert 2">  Node.js Essentials (LinkedIn Learning) – Covered Node.js fundamentals, asynchronous programming, and Express.js.</div>
             </div>
             <div class="timeline-item">
-                <div class="certificate2"><img src="generativeAI.png" alt="Cert 2">Generative AI Basics (LinkedIn Learning) – Introduced concepts of generative AI and its applications in a 40-minute course.</div>
+                <div class="certificate2"><img src="https://i.ibb.co/sJWC7nMt/Linked-In-Learning-Certificate.jpg" alt="Cert 2">Generative AI Basics (LinkedIn Learning) – Introduced concepts of generative AI and its applications in a 40-minute course.</div>
             </div>
     </div>
     </div>
@@ -189,21 +190,34 @@
         </div>
     </div>
 </div>
-    <hr>
     <div id="contact">
-    <div class="contact">
-        <div class="resume">
-
-        </div>
-        <div class="form">
-            <form action="" method="post">
-                <input type="text">
-                <input type="text">
-                <input type="submit">
-            </form>
+        <div class="contact">
+            <div class="resume">
+                <h1>Contact Me!!</h1>
+                <a href="/path-to-your-resume.pdf" class="resume-btn" download>📄 Download Resume</a><br><br>
+                <p class="email">📧 Email: <strong>sasankreddyrajala09@gmail.com</strong></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sasankreddy_09/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="form">
+                <form action="/contact" method="post">
+                    <!-- <input type="text" name="username" placeholder="Your Name" required> -->
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="description" placeholder="Your Message" rows="4" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
         </div>
     </div>
 </div>
-    <script src="../static/js/app.js"></script>
+    
+    <script src="./js/app.js"></script>
 </body>
 </html>
