@@ -47,6 +47,13 @@ app.post('/contact', async (req, res, next) => {
 app.use((req, res, next) => {
     res.status(404).render("error", { error: "404 - Page Not Found" });
 });
+app.use((err, req, res, next) => {
+    console.error("❌ Error:", err.message); // Log error for debugging
+    res.status(500).render("error", { 
+        error: "500 - Internal Server Error", 
+        message: err.message || "Something went wrong" 
+    });
+});
 
 // ✅ Global Error Handling Middleware (Shows Error Page)
 app.use((err, req, res, next) => {
