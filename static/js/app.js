@@ -171,24 +171,3 @@ icons.forEach(element => {
     })
     
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section"); // All sections
-    const navLinks = document.querySelectorAll(".options a"); // Navbar links
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove 'active' class from all links
-                navLinks.forEach(link => link.classList.remove("active"));
-
-                // Find the link that matches the current section
-                const activeLink = document.querySelector(`.options a[href="#${entry.target.id}"]`);
-                if (activeLink) {
-                    activeLink.classList.add("active");
-                }
-            }
-        });
-    }, { threshold: 0.5 }); // Trigger when 50% of section is visible
-
-    sections.forEach(section => observer.observe(section));
-});
